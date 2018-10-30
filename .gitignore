@@ -3,7 +3,21 @@
 ### Example user template
 
 # IntelliJ project files
-.idea/**
+.idea
 *.iml
 out
 gen
+.gitignore
+.idea/httpRequests/
+.idea/vcs.xml
+.idea/workspace.xml
+admin-server/src/test/
+admin-server/target/
+config-server/src/test/
+config-server/target/
+eureka-server/src/test/
+eureka-server/target/
+zipkin-server/src/test/
+zipkin-server/target/
+zuul-server/src/test/
+zuul-server/target/

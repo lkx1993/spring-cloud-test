@@ -1,6 +1,10 @@
 spring:
   application:
     name: cloud-admin
+  security:
+    user:
+      name: test
+      password: 123
 management:
   endpoints:
     web:
@@ -20,3 +24,6 @@ eureka:
   instance:
     hostname: ${hostname:admin}
     prefer-ip-address: true
+    metadata-map:
+      user.name: test
+      user.password: 123
