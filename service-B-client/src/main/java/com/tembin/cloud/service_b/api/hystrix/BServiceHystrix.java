@@ -11,11 +11,11 @@ import org.springframework.stereotype.Component;
 public class BServiceHystrix implements BService {
     @Override
     public String message() {
-        return null;
+        return "sdsafdsedfgggg";
     }
 
     @Override
     public String traceMessage() {
-        return null;
+        return "21312312";
     }
 }

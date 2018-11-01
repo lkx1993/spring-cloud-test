@@ -12,7 +12,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  * @since 2018-10-30 18:12
  **/
 @EnableHystrix
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.tembin.cloud"})
 @EnableDiscoveryClient
 @EnableEurekaClient
 @EnableFeignClients(basePackages = {"com.tembin.cloud.service_c.api"})
