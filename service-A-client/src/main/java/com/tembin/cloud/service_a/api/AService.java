@@ -16,4 +16,7 @@ public interface AService {
 
     @GetMapping("trace-message")
     String traceMessage();
+
+    @GetMapping("log-test")
+    void logTest();
 }

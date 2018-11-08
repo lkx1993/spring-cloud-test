@@ -18,4 +18,9 @@ public class AServiceHystrix implements AService {
     public String traceMessage() {
         return null;
     }
+
+    @Override
+    public void logTest() {
+
+    }
 }
