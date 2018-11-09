@@ -19,7 +19,7 @@ management:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8501/eureka/
+      defaultZone: http://test.tembin.com:8501/eureka/
 zuul:
   routes:
     test:

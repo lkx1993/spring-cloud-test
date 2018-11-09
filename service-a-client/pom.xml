@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>service-B-client</artifactId>
+    <artifactId>service-a-client</artifactId>
 
     <dependencies>
         <dependency>
@@ -17,5 +17,6 @@
             <artifactId>spring-cloud-starter-openfeign</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

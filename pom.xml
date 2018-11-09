@@ -20,12 +20,12 @@
         <module>admin-server</module>
         <module>zuul-server</module>
         <module>zipkin-server</module>
-        <module>service-A</module>
-        <module>service-B</module>
-        <module>service-C</module>
-        <module>service-A-client</module>
-        <module>service-B-client</module>
-        <module>service-C-client</module>
+        <module>service-a</module>
+        <module>service-b</module>
+        <module>service-c</module>
+        <module>service-a-client</module>
+        <module>service-b-client</module>
+        <module>service-c-client</module>
         <module>auth-server</module>
     </modules>
 
@@ -48,18 +48,18 @@
 
         </dependencies>
     </dependencyManagement>
+
     <build>
         <plugins>
+            <!-- Docker maven plugin -->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>1.2.0</version>
                 <configuration>
-                    <imageName>example</imageName>
-                    <baseImage>java</baseImage>
-                    <dockerHost>http://47.52.174.241:2375</dockerHost>
-                    <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
-                    <!-- copy the service's jar file from target into the root directory of the image -->
+                    <dockerHost>http://test.tembin.com:2375</dockerHost>
+                    <imageName>registry.colossus.vip/${project.artifactId}</imageName>
+                    <dockerDirectory>${project.build.outputDirectory}/docker</dockerDirectory>
                     <resources>
                         <resource>
                             <targetPath>/</targetPath>
@@ -69,7 +69,7 @@
                     </resources>
                 </configuration>
             </plugin>
+            <!-- Docker maven plugin -->
         </plugins>
     </build>
-
 </project>
