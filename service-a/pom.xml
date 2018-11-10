@@ -14,7 +14,7 @@
     <dependencies>
         <dependency>
             <groupId>com.tembin</groupId>
-            <artifactId>auth-server</artifactId>
+            <artifactId>auth-core</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
@@ -27,6 +27,7 @@
             <artifactId>service-b-client</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+        <!-- 不引入这个依赖时,会报创建BService异常 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

@@ -16,6 +16,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
+        <!--config-server不用依赖这个包,也可关联到admin-server中去管理,为啥呢-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>

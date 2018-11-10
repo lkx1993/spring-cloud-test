@@ -18,6 +18,7 @@ spring:
     name: config-server
   cloud:
     config:
+      name: config-server
       label: master
       server:
         git:

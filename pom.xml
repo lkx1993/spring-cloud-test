@@ -26,7 +26,7 @@
         <module>service-a-client</module>
         <module>service-b-client</module>
         <module>service-c-client</module>
-        <module>auth-server</module>
+        <module>auth-core</module>
     </modules>
 
     <properties>
