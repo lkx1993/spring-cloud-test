@@ -14,12 +14,12 @@
     <dependencies>
         <dependency>
             <groupId>com.tembin</groupId>
-            <artifactId>service-C-client</artifactId>
+            <artifactId>service-c-client</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>com.tembin</groupId>
-            <artifactId>service-B-client</artifactId>
+            <artifactId>service-b-client</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
         <dependency>
