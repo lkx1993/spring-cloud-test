@@ -21,3 +21,4 @@ zipkin-server/src/test/
 zipkin-server/target/
 zuul-server/src/test/
 zuul-server/target/
+auth-core/target/
