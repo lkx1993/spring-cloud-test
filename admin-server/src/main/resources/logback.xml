@@ -176,7 +176,7 @@
     <!-- root默认级别,spring boot admin可以动态调整 -->
     <root level="info">
         <!-- 控制台输出 -->
-        <!--<appender-ref ref="CONSOLE" />-->
+        <appender-ref ref="CONSOLE" />
         <!-- 文件输出 -->
         <appender-ref ref="ERROR" />
         <appender-ref ref="INFO" />

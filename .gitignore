@@ -10,3 +10,5 @@ gen
 /.idea
 .target
 target/
+/log_base_dir_IS_UNDEFINED/
+/log_dir_IS_UNDEFINED/
