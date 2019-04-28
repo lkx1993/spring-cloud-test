@@ -36,6 +36,13 @@
         </dependency>
     </dependencies>
 
+    <repositories>
+        <repository>
+            <id>test-aliyun</id>
+            <url>http://i.liukx.top:9081/repository/test-aliyun/</url>
+        </repository>
+    </repositories>
+
     <build>
         <plugins>
             <plugin>
