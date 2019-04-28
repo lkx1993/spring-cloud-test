@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.tembin</groupId>
+    <artifactId>tembin-dependencies-parent</artifactId>
+    <version>zz.1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+
+    <properties>
+
+    </properties>
+
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>money-core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>oldriver-core</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>tembin-member-client</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin.oldriver</groupId>
+                <artifactId>tembin-finance-client</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>tembin-partner-client</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <exclusions>
+                    <exclusion>
+                        <groupId>org.slf4j</groupId>
+                        <artifactId>slf4j-log4j12</artifactId>
+                    </exclusion>
+                </exclusions>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>tembin-shiro</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>tembin-auth</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+            <dependency>
+                <groupId>com.tembin</groupId>
+                <artifactId>money-account-client</artifactId>
+                <version>1.0-SNAPSHOT</version>
+                <scope>compile</scope>
+            </dependency>
+
+        </dependencies>
+    </dependencyManagement>
+
+    <distributionManagement>
+        <!-- 发布到 快照版本的仓库，即 测试版本仓库 -->
+        <snapshotRepository>
+            <id>tembin.snapshots</id>
+            <url>http://maven.tembin.com/content/repositories/snapshots/</url>
+        </snapshotRepository>
+        <!-- 发布到 发行版本的仓库中，也可以发布到3rd party 仓库 -->
+        <repository>
+            <id>tembin.releases</id>
+            <url>http://maven.tembin.com/content/repositories/releases/</url>
+        </repository>
+    </distributionManagement>
+
+
+
+</project>
