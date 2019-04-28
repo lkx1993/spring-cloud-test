@@ -8,13 +8,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>admin-server</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.2-SNAPSHOTaaaa</version>
 
 
     <dependencies>
         <dependency>
             <groupId>de.codecentric</groupId>
             <artifactId>spring-boot-admin-starter-server</artifactId>
+            <!--<version>2.0.2</version>-->
             <version>2.0.2</version>
         </dependency>
         <dependency>
@@ -55,7 +56,7 @@
                 <!-- 分支的svn地址 -->
                 <configuration>
                     <username>lkx1993</username>
-                    <password>kiss1234</password>
+                    <password>wewer1234</password>
                     <!--<goals>-pl config-server am</goals>-->
 
                 </configuration>
@@ -75,6 +76,21 @@
         <!--需要打包项目的git地址-->
         <connection>scm:git:https://github.com/lkx1993/spring-cloud-test.git</connection>
 
-        <tag>1.0</tag>
+        <tag>HEAD</tag>
     </scm>
+
+    <distributionManagement>
+        <!-- 发布到 快照版本的仓库，即 测试版本仓库 -->
+        <snapshotRepository>
+            <id>test.snapshots</id>
+            <url>http://i.liukx.top:9081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+        <!-- 发布到 发行版本的仓库中，也可以发布到3rd party 仓库 -->
+        <repository>
+            <id>test.releases</id>
+            <url>http://i.liukx.top:9081/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
+
+
 </project>
